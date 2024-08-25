@@ -1,0 +1,486 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+   // background-color:  rgb(34,45,64);
+   // background: linear-gradient(180deg, rgba(28,82,87,1) 0%, rgba(5,43,66,1) 100%);
+    background: url("/img/coffee-beans.png") ,linear-gradient(180deg, rgba(28,82,87,1) 0%, rgba(5,43,66,1) 100%);
+
+
+}
+
+
+
+nav
+{
+   position: fixed;
+    width: 100%;
+    background: rgb(34,45,64);
+    background:linear-gradient(180deg, rgba(34,45,64,1) 0%, rgba(67,108,133,1) 100%);
+    color: white;
+    padding: 10px 30px;
+    z-index: 1000;
+
+
+}
+
+.navTop
+{
+
+   display: flex;
+   align-items: center;
+    justify-content: space-between;
+   padding: 0 15px;
+
+}
+
+.navBarLogo
+{
+    width: 85px;
+}
+
+.search
+{
+    display:flex;
+    align-items: center;
+    background-color: rgb(34, 45, 64);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.searchInput
+{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.searchInput::placeholder
+{
+    color: lightgray;
+}
+
+.navItem > .total
+{
+    font-size: 28px;
+    font-weight: bold;
+    display: inline;
+    font-family: "Roboto Light";
+}
+
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0 150px;
+
+
+}
+
+.menuItem, .SignUp
+{
+    font-size: 28px;
+    text-decoration: none;
+    margin-right: 50px;
+    cursor: pointer;
+    color: rgb(237, 232, 232);
+    font-weight: 400;
+}
+
+.slider
+{
+    background-color: #436c85;
+    overflow: hidden;
+    
+
+}
+
+.sliderWrapper
+{
+    display: flex;
+    width: 400vw;
+    transition: all 2s ease-in-out;
+}
+
+.sliderItem
+{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.slideBg
+{
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(73, 73, 62);
+    
+}
+
+.sliderImg
+{
+    position: relative;
+    width: 85%;
+    z-index: 1;
+}
+
+.sliderTitle
+{
+    position: absolute;
+    top:10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: lightgray;
+    font-family: "Permanent Marker", cursive;
+    z-index: 5;
+
+}
+
+.sliderPrice
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 5;
+    
+
+}
+
+.sliderItem:nth-child(1) .sliderBg
+{
+    background-color: #369e62;
+  }
+
+.sliderItem:nth-child(2) .sliderBg
+{
+background-color: rebeccapurple;
+}
+
+.sliderItem:nth-child(3) .sliderBg
+{
+background-color: teal;
+}
+
+.sliderItem:nth-child(1) .sliderPrice
+{
+color: #070202;
+}
+.sliderItem:nth-child(2) .sliderPrice
+{
+color: white;
+}
+.sliderItem:nth-child(3) .sliderPrice
+{
+color: #ffffff;
+}
+
+.navButton
+{
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prevButton
+{
+    left: 10px;
+}
+
+.nextButton
+{
+    right: 10px;
+}
+
+.features
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.featureImg
+{
+    width: 50px;
+    height: 50px;
+}
+
+.featuresTitle
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    color: #fbfbfb;
+}
+
+.featuredDesc
+{
+    color: #ffffff;
+    width: 50%;
+    height: 50%;
+
+}
+
+.product
+{
+    height: 125vh;
+    background-image: url("./img/Gemini_Generated_Image_pddbhipddbhipddb.webp");
+    //background-image:  linear-gradient(90deg, rgba(34,45,64,1) 0%, rgba(67,108,133,1) 100%);
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.productImg
+{
+    position: absolute;
+    width: 75%;
+    height: auto;
+
+
+}
+
+.productDetails
+{
+    display: inline;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+  //  padding: 10px;
+
+}
+
+.productTitle
+{
+    color: #ffd102;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.productDesc
+{
+    display: contents;
+}
+
+.productDesc, .productPrice
+{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 900;
+
+}
+
+.productWeight, .productRegion, .productRoastLevel, .productFlavorProfile
+{
+    color: #ffd102;
+    font-size: 24px;
+}
+
+.productGrindOption
+{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #818080;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+
+
+.productButton
+{
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #3c3b3b;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.productButton:after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d6d6d6;
+    border-radius: 10rem;
+    z-index: -2;
+}
+.productButton:before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0b0c0c;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+.productButton:hover
+{
+    color: #fff;
+}
+.productButton:hover:before
+{
+    width: 100%;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLeft
+{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+    font-size: 15px;
+    flex-direction: column;
+
+}
+
+
+
+.fMenuTitle
+{
+    font-size: 24px;
+
+}
+.fList
+{
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+}
+
+.fListItem
+{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footerMenu
+{
+    flex-direction: row;
+
+}
+
+.footerRight
+{
+    flex:1;
+    padding: 50px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.fInput
+{
+    padding: 5px;
+}
+
+.fIcons
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright
+{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
